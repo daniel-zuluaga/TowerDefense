@@ -26,6 +26,11 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        UpdateHealthAndMoneyText();
+    }
+
     void UpdateHealthAndMoneyText()
     {
         healthAndMoneyText.text = $"Health: {health}\nMoney: {money}";
