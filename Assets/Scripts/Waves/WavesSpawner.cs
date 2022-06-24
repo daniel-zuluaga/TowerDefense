@@ -15,24 +15,14 @@ public class WavesSpawner : MonoBehaviour
     public TextMeshProUGUI waveText;
     public GameObject nextWaveButton;
 
-    /*
-    void OnEnable()
-    {
-        Enemy.onEnemyDestroyed += OnEnemyDestroyed;
-    }
-
-    void OnDisable()
-    {
-        Enemy.onEnemyDestroyed -= OnEnemyDestroyed;
-    }
-    */
-
     public void SpawnNextWave()
     {
         curWave++;
+
         if (curWave - 1 == waves.Length)
             return;
         waveText.text = $"Wave: {curWave}";
+
         StartCoroutine(SpawnWave());
     }
 

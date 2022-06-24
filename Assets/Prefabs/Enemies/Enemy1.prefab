@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   damageToPlayer: 25
-  moneyOnDeath: 10
-  moveSpeed: 5
+  moneyOnDeath: 20
+  moveSpeed: 1.5
 --- !u!135 &8329610293207428850
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2233fdf0e5336419c89fd213c58673ba, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.73
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2233fdf0e5336419c89fd213c58673ba, type: 3}
       propertyPath: m_LocalRotation.w
