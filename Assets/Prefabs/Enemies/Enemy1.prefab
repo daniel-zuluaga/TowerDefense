@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6885549312422710338}
   - component: {fileID: 8329610293207428850}
   - component: {fileID: -1653200422640577360}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -157,6 +157,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 2233fdf0e5336419c89fd213c58673ba, type: 3}
       propertyPath: m_Name
       value: enemy_ufoYellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2233fdf0e5336419c89fd213c58673ba, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2233fdf0e5336419c89fd213c58673ba, type: 3}
