@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba1de8583b8049c3a95802f7151f8aa, type: 3}
-  m_Name: CastleTower
+  m_Name: CannonTower
   m_EditorClassIdentifier: 
-  displayName: Castle Tower
-  cost: 50
+  displayName: Cannon Tower
+  cost: 100
   range: 2
-  icon: {fileID: 21300000, guid: 7383cd4c291c044e9abaa090da677b91, type: 3}
-  spawnPrefab: {fileID: 6768577397668886378, guid: 7e63525a678b44dfc8e4e7dd360c6d58, type: 3}
+  icon: {fileID: 21300000, guid: 85fb4416253354459a749702601b1fd5, type: 3}
+  spawnPrefab: {fileID: 5188682911112434966, guid: cfffe131b11374b3884e8677695e29b9, type: 3}
