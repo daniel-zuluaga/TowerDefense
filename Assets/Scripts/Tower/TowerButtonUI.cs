@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TowerButton : MonoBehaviour
+public class TowerButtonUI : MonoBehaviour
 {
     public TowerData tower;
     public TextMeshProUGUI towerNameText;
@@ -40,7 +40,7 @@ public class TowerButton : MonoBehaviour
 
     public void OnClick()
     {
-
+        GameManager.instance.towerPlacement.SelectTowerToPlace(tower);
     }
 
     public void OnMoneyChange()
