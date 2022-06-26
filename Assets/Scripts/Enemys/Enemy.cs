@@ -13,9 +13,17 @@ public class Enemy : MonoBehaviour
     private Transform[] path;
     private int curPathWaypoint;
 
+    public GameObject healthBarPrefab;
+
     void Start()
     {
         path = GameManager.instance.enemyPath.waypoints;
+
+        // Create the health bar
+        Canvas canvas = FindObjectOfType<Canvas>();
+        GameObject healthBar = Instantiate(healthBarPrefab, canvas.transform);
+        healthBar.GetComponent<EnemyHealthBar>().Initialize(this);
+
     }
 
     void Update()
