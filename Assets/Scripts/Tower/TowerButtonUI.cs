@@ -15,12 +15,12 @@ public class TowerButtonUI : MonoBehaviour
 
     private void OnEnable()
     {
-        GameManager.instance.onMoneyChange.AddListener(OnMoneyChange);
+        GameManager.instance.onMoneyChanged.AddListener(OnMoneyChange);
     }
 
     private void OnDisable()
     {
-        GameManager.instance.onMoneyChange.RemoveListener(OnMoneyChange);
+        GameManager.instance.onMoneyChanged.RemoveListener(OnMoneyChange);
 
     }
 
