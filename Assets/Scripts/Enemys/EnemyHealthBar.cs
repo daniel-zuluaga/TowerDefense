@@ -19,25 +19,21 @@ public class EnemyHealthBar : MonoBehaviour
         startHealth = enemy.health;
 
         cam = Camera.main;
-
     }
 
-    private void Update()
+    void Update()
     {
-        if(enemy != null)
+        if (enemy != null)
         {
-            fill.fillAmount = enemy.health / startHealth;
+            fill.fillAmount = (float)enemy.health / (float)startHealth;
             fill.color = colorGradient.Evaluate(fill.fillAmount);
 
             transform.position = cam.WorldToScreenPoint(enemy.transform.position) + new Vector3(0, Screen.height / 30.0f);
-
-
         }
         else
         {
             Destroy(gameObject);
         }
-
     }
 
 }
