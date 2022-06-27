@@ -3,40 +3,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Events;
-using System;
 
 public class GameManager : MonoBehaviour
 {
     public int health;
     public int money;
+    private bool gameActive;
 
     [Header("Components")]
     public TextMeshProUGUI healthAndMoneyText;
     public EnemyPath enemyPath;
     public TowerPlacement towerPlacement;
     public EndScreenUI endScreen;
-    public WavesSpawner waveSpawner;
+    public WaveSpawner waveSpawner;
 
     [Header("Events")]
-    public UnityEvent onEnemyDestroyed;
-    public UnityEvent onMoneyChange;
+    public UnityEvent onMoneyChanged;
 
-    //Singleton
+    // Singleton
     public static GameManager instance;
 
-    private void Awake()
+    void OnEnable()
+    {
+        Enemy.OnDestroyed += OnEnemyDestroyed;
+    }
+
+    void OnDisable()
+    {
+        Enemy.OnDestroyed -= OnEnemyDestroyed;
+    }
+
+    void Awake()
     {
         instance = this;
     }
 
-    private void Start()
+    void Start()
     {
+        gameActive = true;
         UpdateHealthAndMoneyText();
     }
 
     void UpdateHealthAndMoneyText()
     {
-        healthAndMoneyText.text = $"Health: {health}\nMoney: {money}";
+        healthAndMoneyText.text = $"Health: {health}\nMoney: ${money}";
     }
 
     public void AddMoney(int amount)
@@ -44,7 +54,7 @@ public class GameManager : MonoBehaviour
         money += amount;
         UpdateHealthAndMoneyText();
 
-        onMoneyChange.Invoke();
+        onMoneyChanged.Invoke();
     }
 
     public void TakeMoney(int amount)
@@ -52,7 +62,7 @@ public class GameManager : MonoBehaviour
         money -= amount;
         UpdateHealthAndMoneyText();
 
-        onMoneyChange.Invoke();
+        onMoneyChanged.Invoke();
     }
 
     public void TakeDamage(int amount)
@@ -64,23 +74,28 @@ public class GameManager : MonoBehaviour
             GameOver();
     }
 
-    void GameOver()
+    public void GameOver()
     {
+        gameActive = false;
         endScreen.gameObject.SetActive(true);
         endScreen.SetEndScreen(false, waveSpawner.curWave);
     }
 
-    void winGame()
+    public void WinGame()
     {
+        gameActive = false;
         endScreen.gameObject.SetActive(true);
         endScreen.SetEndScreen(true, waveSpawner.curWave);
     }
 
     public void OnEnemyDestroyed()
     {
-        if(waveSpawner.remainingEnemies == 0 && waveSpawner.curWave == waveSpawner.waves.Length)
+        if (!gameActive)
+            return;
+
+        if (waveSpawner.remainingEnemies == 0 && waveSpawner.curWave == waveSpawner.waves.Length)
         {
-            winGame();
+            WinGame();
         }
     }
 }

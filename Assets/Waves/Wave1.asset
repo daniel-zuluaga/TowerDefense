@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySets:
   - enemyPrefab: {fileID: 6689732690735921923, guid: 0f83dd77cf19a4aa988ff7b67cc0787b, type: 3}
-    spawnCount: 3
-    spawnDelay: 0.5
-    spawnRate: 0.8
-  - enemyPrefab: {fileID: 4029542991036307881, guid: 3641a66b26bb14f62a38a97156d365d2, type: 3}
-    spawnCount: 1
-    spawnDelay: 0.5
-    spawnRate: 0.8
+    spawnCount: 6
+    spawnDelay: 0
+    spawnRate: 1
