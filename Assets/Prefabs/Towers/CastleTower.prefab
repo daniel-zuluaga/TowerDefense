@@ -49,10 +49,10 @@ MonoBehaviour:
   range: 2
   targetPriority: 0
   rotateTowardsTarget: 0
-  attackRate: 0.5
+  attackRate: 0.3
   projectilePrefab: {fileID: 5522584529997186519, guid: b6ddb130bdca64327970114da8cbdfed, type: 3}
   projectileSpawnPos: {fileID: 6768577398010769664}
-  projectileDamage: 8
+  projectileDamage: 15
   projectileSpeed: 6
 --- !u!135 &6768577397668886377
 SphereCollider:

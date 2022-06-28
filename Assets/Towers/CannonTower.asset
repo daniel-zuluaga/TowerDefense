@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CannonTower
   m_EditorClassIdentifier: 
   displayName: Cannon Tower
-  cost: 100
-  range: 2
+  cost: 50
+  range: 3
   icon: {fileID: 21300000, guid: 85fb4416253354459a749702601b1fd5, type: 3}
   spawnPrefab: {fileID: 5188682911112434966, guid: cfffe131b11374b3884e8677695e29b9, type: 3}
