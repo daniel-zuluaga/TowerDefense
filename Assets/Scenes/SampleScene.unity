@@ -2758,7 +2758,7 @@ RectTransform:
   - {fileID: 1355944779}
   - {fileID: 1135389270}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5269,7 +5269,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135389269
 GameObject:
@@ -8479,9 +8479,9 @@ GameObject:
   - component: {fileID: 1946780227}
   - component: {fileID: 1946780229}
   - component: {fileID: 1946780230}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: _GameManager
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8537,6 +8537,14 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 9379ada9161734849adf60cc1795efd2, type: 2}
   - {fileID: 11400000, guid: 6c46d380563824b038d38ce8851e3252, type: 2}
+  - {fileID: 11400000, guid: 901e0593ac54a48a9873b64bbed98388, type: 2}
+  - {fileID: 11400000, guid: 1e5fbe35f7c584678bf10d52f58c1165, type: 2}
+  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
+  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
+  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
+  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
+  - {fileID: 11400000, guid: 23998983a8fed45d4b9ec3977dce6cc4, type: 2}
+  - {fileID: 11400000, guid: f12a1515440444c94bcc47e4533bdff9, type: 2}
   curWave: 0
   remainingEnemies: 0
   enemySpawnPos: {fileID: 778791010}

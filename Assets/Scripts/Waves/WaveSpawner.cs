@@ -25,6 +25,11 @@ public class WaveSpawner : MonoBehaviour
         Enemy.OnDestroyed -= OnEnemyDestroyed;
     }
 
+    private void Start()
+    {
+        remainingEnemies = 0;
+    }
+
     public void SpawnNextWave()
     {
         curWave++;

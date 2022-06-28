@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 0.5
-  damage: 15
+  damage: 10
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 128
