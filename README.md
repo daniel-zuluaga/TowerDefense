@@ -6,10 +6,11 @@ Well, it's a 3D turret game similar to the games:
 - Alien Creeps TD
 - King of Defense: Merge TD
 
-This game is a tower game where the user has to kill the enemies, they come in waves and they give
-him coins to build towers that help him kill the enemies so that the enemies do not reach the line final
-the player does not lose, but the user 100 of life to win the games so that he does not let any enemy
-reach the final line so that he does not take away life
+The game tries that the user has to win all the waves 
+and not let any enemy reach the final line, that is, 
+it is an alien invasion game where the user has to survive 
+the waves to win with the help of towers that Help him 
+kill all the UFO's he wants he loses
 
 # what did I do
 
