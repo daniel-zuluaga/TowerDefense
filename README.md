@@ -12,7 +12,7 @@ it is an alien invasion game where the user has to survive
 the waves to win with the help of towers that Help him 
 kill all the UFO's he wants he loses
 
-# The video of the game
+# Video of the game
 https://www.youtube.com/watch?v=hptAHDzpHRU
 
 # what did I do
