@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
-        gameActive = false;
+        gameActive = true;
         endScreen.gameObject.SetActive(true);
         endScreen.SetEndScreen(true, waveSpawner.curWave);
     }

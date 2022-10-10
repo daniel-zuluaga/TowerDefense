@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: a9490d5eb95b449fcb9039e0d1e3bb94, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1427,7 +1427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4689,7 +4689,7 @@ GameObject:
   - component: {fileID: 1032443514}
   - component: {fileID: 1032443513}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: MenuGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4761,7 +4761,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1135389273}
         m_TargetAssemblyTypeName: EndScreenUI, Assembly-CSharp
-        m_MethodName: QuitButton
+        m_MethodName: OnMenuGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8539,9 +8539,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6c46d380563824b038d38ce8851e3252, type: 2}
   - {fileID: 11400000, guid: 901e0593ac54a48a9873b64bbed98388, type: 2}
   - {fileID: 11400000, guid: 1e5fbe35f7c584678bf10d52f58c1165, type: 2}
-  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
-  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
-  - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
   - {fileID: 11400000, guid: e522b47b76c314edd83c0dd2cdd349e2, type: 2}
   - {fileID: 11400000, guid: 23998983a8fed45d4b9ec3977dce6cc4, type: 2}
   - {fileID: 11400000, guid: f12a1515440444c94bcc47e4533bdff9, type: 2}
