@@ -22,8 +22,6 @@ it helps a lot in the creation of video games
 
 # I will briefly explain the game I made
 
-# I'm going to briefly explain the game I made
-
 It is a tower game where the user can not let the enemies pass in the final line because
 he is taking life (100) and if he reaches 0 life he will get the GameOver panel, but if the
 user survives all the waves of enemies (they are UFO alien ships) you will get the win panel
