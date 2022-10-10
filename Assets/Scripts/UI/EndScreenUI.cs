@@ -13,18 +13,18 @@ public class EndScreenUI : MonoBehaviour
     {
         headerText.text = didWin ? "You Win!" : "Game Over!";
         headerText.color = didWin ? Color.green : Color.red;
-        bodyText.text = $"You survived {roundsSurvive} rounds.";
+        bodyText.text = $"You survived {roundsSurvive} rounds";
 
     }
 
     public void OnPlayAgainButton ()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("SampleScene");
     }
 
-    public void QuitButton()
+    public void OnMenuGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Menu");
     }
 
 }
