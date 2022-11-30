@@ -12,6 +12,12 @@ it is an alien invasion game where the user has to survive
 the waves to win with the help of towers that Help him 
 kill all the UFO's he wants he loses
 
+<img width="965" alt="Captura de pantalla 2022-11-30 a la(s) 4 39 05 p m" src="https://user-images.githubusercontent.com/70453255/204914951-dcd9c9eb-d8ba-440a-a176-24060c11b789.png">
+
+<img width="961" alt="Captura de pantalla 2022-11-30 a la(s) 4 40 02 p m" src="https://user-images.githubusercontent.com/70453255/204914986-ad46a2d4-d3f5-435d-a34a-31dbe433d107.png">
+
+<img width="957" alt="Captura de pantalla 2022-11-30 a la(s) 4 40 12 p m" src="https://user-images.githubusercontent.com/70453255/204915006-a9b82b63-b854-4116-a599-81920139aeac.png">
+
 # Video of the game
 https://www.youtube.com/watch?v=hptAHDzpHRU
 
